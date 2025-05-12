@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodBox Junior</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/icon-foodbox-junior.png"
+            alt="FoodBox Junior Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          FoodBox Junior
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#planos">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>FoodBox Junior</h1>
+        <p class="hero-subtitle">A melhor comida para os pequenos!</p>
+        <a href="#planos" class="cta-button cta-hero">Quero saber mais</a>
+      </div>
+    </header>
+
+    <section id="planos" class="section-padding">
+      <div class="section-container">
+        <h2 class="section-title">Nossos Planos</h2>
+        <div class="plans-grid">
+          <div class="plan-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Plano Basic</h5>
+                <p class="card-text price">R$ 49,90/mês</p>
+                <ul class="list-unstyled">
+                  <li>Benefício 1</li>
+                  <li>Benefício 2</li>
+                  <li>Benefício 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Plano Plus</h5>
+                <p class="card-text price">R$ 79,90/mês</p>
+                <ul class="list-unstyled">
+                  <li>Benefício 1</li>
+                  <li>Benefício 2</li>
+                  <li>Benefício 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Plano Premium</h5>
+                <p class="card-text price">R$ 99,90/mês</p>
+                <ul class="list-unstyled">
+                  <li>Benefício 1</li>
+                  <li>Benefício 2</li>
+                  <li>Benefício 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section-padding testimonials-section">
+      <div class="section-container">
+        <h2 class="section-title">O que nossos clientes dizem</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante."
+                </p>
+                <footer class="blockquote-footer">Cliente 1</footer>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante."
+                </p>
+                <footer class="blockquote-footer">Cliente 2</footer>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante."
+                </p>
+                <footer class="blockquote-footer">Cliente 3</footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section-padding">
+      <div class="section-container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="nome" class="form-label-custom">Nome</label>
+            <input type="text" class="form-input-custom" id="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label-custom">E-mail</label>
+            <input type="email" class="form-input-custom" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem" class="form-label-custom">Mensagem</label>
+            <textarea
+              class="form-textarea-custom"
+              id="mensagem"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button" id="btnEnviar" disabled>
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer" class="site-footer">
+      <div class="footer-container">
+        <p class="copyright-text">
+          &copy; 2025 FoodBox Junior. Todos os direitos reservados.
+        </p>
+        <p>
+          <a href="#" class="footer-link">Termos de Serviço</a> |
+          <a href="#" class="footer-link">Política de Privacidade</a>
+        </p>
+      </div>
+    </footer>
+
+    <button id="btnVoltarTopo" class="back-to-top-button">&uarr;</button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
